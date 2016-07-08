@@ -120,6 +120,21 @@ RSpec.describe Calculator do
       expect(c.memory).to eq(2)
       expect(c.memory).to eq(nil)
     end
+
+    it "returns nil if memory was never set" do
+      expect(c.memory).to eq(nil)
+    end
+
+  end
+
+  describe "stringify" do
+    let(:stringify_c) {Calculator.new(true)}
+
+    it "returns the string of a number" do
+      expect(stringify_c.add(1,4)).to eq("5")
+    end
+  
+
   end
 
 
