@@ -127,7 +127,7 @@ RSpec.describe Calculator do
 
   end
 
-  describe "stringify" do
+  describe "#stringify" do
     let(:stringify_c) {Calculator.new(true)}
 
     it "returns the string of a number" do
